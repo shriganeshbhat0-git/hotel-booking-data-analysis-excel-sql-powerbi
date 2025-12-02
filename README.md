@@ -4,29 +4,35 @@ Analyzed hotel booking data using **Excel**, **SQL Server**, and **Power BI** to
 
 ---
 
-## 📌 Table of Contents
-- <a href="# Project Overview"> Project Overview</a>
-- <a href="# Business Problem"> Business Problem</a>
-- <a href="# Dataset"> Dataset</a>
-- <a href="# Tools and Technologies"> Tools and Technologies</a>
-- <a href="# Folder Structure"> Folder Structure</a>
-- <a href="# 🧹 Data Cleaning & Preparation"> 🧹 Data Cleaning & Preparation</a>
-- <a href="# 🔍 Exploratory Data Analysis (EDA)"> 🔍 Exploratory Data Analysis (EDA)</a>
-- <a href="# 📊 Key Insights"> 📊 Key Insights</a>
-- <a href="# 📈 Dashboard Overview"> 📈 Dashboard Overview</a>
-- <a href="# 🔮 Future Work"> 🔮 Future Work</a>
-- <a href="# 📚 References"> 📚 References</a>
-- <a href="# 👤 Author & Contact"> 👤 Author & Contact</a>
+<h2>📌 Table of Contents</h2>
+
+<ul>
+  <li><a href="#project-overview">Project Overview</a></li>
+  <li><a href="#business-problem">Business Problem</a></li>
+  <li><a href="#dataset">Dataset</a></li>
+  <li><a href="#tools-and-technologies">Tools and Technologies</a></li>
+  <li><a href="#folder-structure">Folder Structure</a></li>
+  <li><a href="#data-cleaning-preparation">Data Cleaning & Preparation</a></li>
+
+  <li><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+  <li><a href="#key-insights">Key Insights</a></li>
+  <li><a href="#dashboard-overview">Dashboard Overview</a></li>
+  <li><a href="#future-work">Future Work</a></li>
+  <li><a href="#references">References</a></li>
+  <li><a href="#author-contacts">Author & Contacts</a></li>
+</ul>
 
 
 ---
 
 ## Project Overview
+<h2 id="project-overview">Project Overview</h2>
 This project focuses on analyzing hotel booking data from 2018–2020 to identify patterns in reservations, cancellations, revenue trends, and customer behavior. The insights help in decision-making for hotel management and marketing strategies.
 
 ---
 
 ## Business Problem
+<h2 id="business-problem">Business Problem</h2>
 Hotels often struggle with understanding booking trends, managing cancellations, and maximizing occupancy. This project aims to:
 - Identify trends in bookings and cancellations.
 - Analyze revenue performance over years.
