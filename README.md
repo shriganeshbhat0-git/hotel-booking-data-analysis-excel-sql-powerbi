@@ -5,18 +5,19 @@ Analyzed hotel booking data using **Excel**, **SQL Server**, and **Power BI** to
 ---
 
 ## 📌 Table of Contents
-1. [Project Overview](#project-overview)  
-2. [Business Problem](#business-problem)  
-3. [Dataset](#dataset)  
-4. [Tools and Technologies](#tools-and-technologies)  
-5. [Folder Structure](#folder-structure)  
-6. [Data Cleaning & Preparation](#data-cleaning--preparation)  
-7. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
-8. [Key Insights](#key-insights)  
-9. [Dashboard Overview](#dashboard-overview)  
-10. [Future Work](#future-work)  
-11. [References](#references)  
-12. [Author & Contact](#author--contact)  
+- <a href="# Project Overview"> Project Overview</a>
+- <a href="# Business Problem"> Business Problem</a>
+- <a href="# Dataset"> Dataset</a>
+- <a href="# Tools and Technologies"> Tools and Technologies</a>
+- <a href="# Folder Structure"> Folder Structure</a>
+- <a href="# 🧹 Data Cleaning & Preparation"> 🧹 Data Cleaning & Preparation</a>
+- <a href="# 🔍 Exploratory Data Analysis (EDA)"> 🔍 Exploratory Data Analysis (EDA)</a>
+- <a href="# 📊 Key Insights"> 📊 Key Insights</a>
+- <a href="# 📈 Dashboard Overview"> 📈 Dashboard Overview</a>
+- <a href="# 🔮 Future Work"> 🔮 Future Work</a>
+- <a href="# 📚 References"> 📚 References</a>
+- <a href="# 👤 Author & Contact"> 👤 Author & Contact</a>
+
 
 ---
 
