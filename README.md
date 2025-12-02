@@ -1,6 +1,6 @@
 # 🏨 Hotel Booking Data Analysis (2018–2020)
 
-Analyzed hotel booking data using **Excel**, **SQL Server**, and **Power BI** to consolidate and standardize records, uncovering key metrics and providing actionable insights.
+Analyzed hotel booking data using **Excel**, **SQL Server**, and **Power BI** to consolidate and standardize records, uncover key metrics, and provide actionable insights.
 
 ---
 
@@ -8,220 +8,141 @@ Analyzed hotel booking data using **Excel**, **SQL Server**, and **Power BI** to
 1. [Project Overview](#project-overview)  
 2. [Business Problem](#business-problem)  
 3. [Dataset](#dataset)  
-4. [Tools & Technologies](#tools--technologies)  
+4. [Tools and Technologies](#tools-and-technologies)  
 5. [Folder Structure](#folder-structure)  
 6. [Data Cleaning & Preparation](#data-cleaning--preparation)  
-7. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
-8. [Key Insights](#key-insights)  
-9. [Dashboard Overview](#dashboard-overview)  
-10. [Future Work](#future-work)  
-11. [References](#references)  
-12. [Author & Contact](#author--contact)  
+7. [Analysis & Insights](#analysis--insights)  
+8. [Dashboard](#dashboard)  
+9. [Conclusion](#conclusion)  
 
 ---
 
-## 📌 Project Overview
-
-This project analyzes **three years of hotel booking data (2018–2020)** to uncover business insights related to revenue growth, booking patterns, hotel performance, parking utilization, and customer behavior.  
-The goal was to help hotels **optimize operations and make data-driven decisions**.
+## Project Overview
+This project focuses on analyzing hotel booking data from 2018–2020 to identify patterns in reservations, cancellations, revenue trends, and customer behavior. The insights help in decision-making for hotel management and marketing strategies.
 
 ---
 
-## 📌 Business Problem
-
-The hotel chain wants to understand multi-year performance and operational improvements needed. Stakeholders require a **Power BI dashboard** to answer three core questions:
-
-- **Is hotel revenue growing year-over-year?**  
-  Measure revenue trends and segment performance by hotel type (City vs. Resort) to assess growth and profitability.
-
-- **Should we increase the size of our parking lot?**  
-  Understand trends in guests arriving with personal cars to plan infrastructure upgrades.
-
-- **What trends can we observe in guest behavior?**  
-  Analyze occupancy, average daily rates (ADR), number of guests, and seasonality to forecast demand and optimize pricing.
+## Business Problem
+Hotels often struggle with understanding booking trends, managing cancellations, and maximizing occupancy. This project aims to:
+- Identify trends in bookings and cancellations.
+- Analyze revenue performance over years.
+- Highlight customer behavior patterns.
+- Provide actionable recommendations.
 
 ---
 
-## 📂 Dataset
-
-- **Rows:** Multiple years of booking records  
-- **Columns:** hotel type, booking dates, stays, guests, parking, revenue-related fields  
-- **Source:** [Public hotel booking dataset] (insert link if available)  
-
----
-
-## 🛠️ Tools & Technologies
-
-1. **Microsoft Excel** – basic data exploration, preliminary checks  
-2. **SQL Server (SSMS)** – data cleaning, standardization, aggregations, joins, filtering, computed columns  
-3. **Power BI** – data modeling, KPIs, bar/line charts, slicers, seasonality analysis  
-4. **GitHub** – version control, documentation, repository organization  
+## Dataset
+The dataset includes:
+- Booking dates
+- Customer details
+- Room types
+- Stay duration
+- Cancellation status
+- Revenue
 
 ---
 
-## 📂 Folder Structure
+## Tools and Technologies
+- **Excel** – Initial exploration and cleaning.  
+- **SQL Server** – Data consolidation, querying, and aggregation.  
+- **Power BI** – Dashboard creation and visualization.  
 
-hotel-booking-analysis/
+---
+---
+
+## Folder Structure
+```markdown
+Hotel_Booking_Project/
 │
 ├── data/
-│ ├── raw/ # Raw hotel booking CSV files
-│ └── cleaned/ # SQL query files used to clean and prepare data
-├── analysis-of-hoteldata/ # Analysis scripts / notebooks
-├── report_of_hotel-data/ # Final report / outputs
-├── dash_board_of_hotel_data/ # Power BI dashboard files and related exports
-├── images/ # Screenshots, charts, and dashboard visuals
-├── README.md # Project documentation
-└── requirements.txt # Dependencies (if any)
+│   ├── raw/             # Original hotel data files
+│   └── cleaned/         # Cleaned data after preprocessing
+│
+├── sql_queries/          # SQL scripts used for analysis
+│
+├── images/               # Screenshots, charts, and visualizations
+│
+├── analysis/             
+│   ├── analysis-of-hotel-data.md
+│   └── report_of_hotel_data.md
+│
+└── dashboard/            
+    └── dash_board_of_hotel_data.pbix
+
+
+
 ---
 
 ## 🧹 Data Cleaning & Preparation
 
-- Imported and structured raw hotel booking data (2018–2020) along with supporting tables for market segments and meal costs.  
-- Unified multi-year data into a single dataset using `UNION ALL` and created a CTE for streamlined querying.  
-- Standardized data types, formatted dates, and handled missing values.  
-- Engineered revenue and other calculated fields for business analysis.  
-- Enriched dataset using `LEFT JOIN` with market segment and meal cost tables, creating an **analysis-ready dataset**.  
+- Imported raw hotel booking datasets and merged multi-year data.  
+- Standardized data types, formatted dates, and filled missing values.  
+- Engineered revenue and calculated fields.  
+- Used joins to enrich data with market segment and meal cost tables.  
+- Created a fully **analysis-ready dataset**.
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
-- Verified unified data structure, row counts, and consistency post-merge.  
-- Analyzed revenue trends year-over-year and segmented by hotel type.  
-- Explored guest behavior, occupancy patterns, and seasonal variations.  
-- Evaluated parking space requirements to inform operational decisions.  
-- Validated all key fields and aggregated outputs for accurate Power BI modeling.  
+- Verified data consistency after merging.  
+- Analyzed revenue trends, booking patterns, seasonality.  
+- Studied guest behavior and occupancy.  
+- Evaluated parking requirements using car-space data.  
 
 ---
 
 ## 📊 Key Insights
 
-- City Hotels consistently had more bookings than Resort Hotels.  
-- Revenue increased year-over-year despite seasonal dips.  
-- Peak bookings occurred during holiday and vacation seasons.  
-- Parking space demand correlated strongly with family bookings.  
-- Cancellation rates varied depending on customer type and season.  
-- Longer stays were more common in Resort Hotels.  
+- City Hotels receive higher bookings consistently.  
+- Revenue increased every year with minor seasonal dips.  
+- Peak bookings occur during holiday seasons.  
+- Higher car-space usage seen with family bookings.  
+- Resort Hotels show longer average stays.  
 
 ---
 
 ## 📈 Dashboard Overview
 
-The **Power BI dashboard** provides an interactive view of hotel performance.
+The **Power BI dashboard** provides a complete view of hotel performance.
 
-### 1. Key Performance Indicators (KPIs)
-- **Total Revenue:** Aggregate revenue across all years and hotels  
-- **Average Daily Rate (ADR):** Overall average room rate  
-- **Total Nights:** Total nights booked  
-- **Average Discount:** Average discount applied across bookings  
+### 1. KPIs:
+- Total Revenue  
+- Average Daily Rate (ADR)  
+- Total Nights  
+- Average Discount  
 
-### 2. Trends and Visual Analysis
-- **Revenue Trend:** Line chart over time, segmented by hotel type  
-- **Sparklines:** ADR, total nights, discount trends, required car spaces  
-- **Hotel Type Revenue:** Donut chart showing revenue contribution  
-- **Parking Analysis:** Tracks usage trends to support decisions  
+### 2. Visuals:
+- Revenue trend line chart  
+- ADR / Nights / Discount sparklines  
+- Donut chart for revenue by hotel type  
+- Parking utilization chart  
 
-### 3. Interactive Filters & Support Metrics
-- **Slicers:** Country, Hotel Type, Date range  
-- **Matrix Table:** Breakdown of revenue, car spaces, and parking percentages  
-
-![Hotel Data Analysis DashBoard](images/dashboard_screenshot.png"
----
-
-## 🔮 Future Work
-
-- Incorporate more recent data (2021–2023) for trend continuity  
-- Add predictive analytics for revenue and occupancy forecasts  
-- Implement dynamic pricing analysis for ADR optimization  
-- Include guest sentiment analysis from reviews for better insights  
-
----
-
-## 📚 References
-
-- [Public hotel booking dataset] (
----
-
-## 🧹 Data Cleaning & Preparation
-
-- Imported and structured raw hotel booking data (2018–2020) along with supporting tables for market segments and meal costs.  
-- Unified multi-year data into a single dataset using `UNION ALL` and created a CTE for streamlined querying.  
-- Standardized data types, formatted dates, and handled missing values.  
-- Engineered revenue and other calculated fields for business analysis.  
-- Enriched dataset using `LEFT JOIN` with market segment and meal cost tables, creating an **analysis-ready dataset**.  
-
----
-
-## 🔍 Exploratory Data Analysis (EDA)
-
-- Verified unified data structure, row counts, and consistency post-merge.  
-- Analyzed revenue trends year-over-year and segmented by hotel type.  
-- Explored guest behavior, occupancy patterns, and seasonal variations.  
-- Evaluated parking space requirements to inform operational decisions.  
-- Validated all key fields and aggregated outputs for accurate Power BI modeling.  
-
----
-
-## 📊 Key Insights
-
-- City Hotels consistently had more bookings than Resort Hotels.  
-- Revenue increased year-over-year despite seasonal dips.  
-- Peak bookings occurred during holiday and vacation seasons.  
-- Parking space demand correlated strongly with family bookings.  
-- Cancellation rates varied depending on customer type and season.  
-- Longer stays were more common in Resort Hotels.  
-
----
-
-## 📈 Dashboard Overview
-
-The **Power BI dashboard** provides an interactive view of hotel performance.
-
-### 1. Key Performance Indicators (KPIs)
-- **Total Revenue:** Aggregate revenue across all years and hotels  
-- **Average Daily Rate (ADR):** Overall average room rate  
-- **Total Nights:** Total nights booked  
-- **Average Discount:** Average discount applied across bookings  
-
-### 2. Trends and Visual Analysis
-- **Revenue Trend:** Line chart over time, segmented by hotel type  
-- **Sparklines:** ADR, total nights, discount trends, required car spaces  
-- **Hotel Type Revenue:** Donut chart showing revenue contribution  
-- **Parking Analysis:** Tracks usage trends to support decisions  
-
-### 3. Interactive Filters & Support Metrics
-- **Slicers:** Country, Hotel Type, Date range  
-- **Matrix Table:** Breakdown of revenue, car spaces, and parking percentages  
+![Hotel Data Analysis DashBoard](images/dashboard_screenshot.png)
 
 ---
 
 ## 🔮 Future Work
 
-- Incorporate more recent data (2021–2023) for trend continuity  
-- Add predictive analytics for revenue and occupancy forecasts  
-- Implement dynamic pricing analysis for ADR optimization  
-- Include guest sentiment analysis from reviews for better insights  
+- Add 2021–2023 data  
+- Predictive modelling for revenue and occupancy  
+- Dynamic pricing analysis for ADR optimization  
+- Sentiment analysis from customer reviews  
 
 ---
 
 ## 📚 References
 
-- [Public hotel booking dataset] (https://absentdata.com/data-analysis/where-to-find-data) 
+- [Public hotel booking dataset](https://absentdata.com/data-analysis/where-to-find-data)
 
 ---
 
 ## 👤 Author & Contact
 
 **Shree Ganesh Venkatramana Bhat** – Data Analyst  
-- Email: shriganeshbhat0@gmail.com  
-- LinkedIn:https://www.linkedin.com/in/shreeganesh-bhat-8a8184398?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app 
-- Power BI & SQL Server tutorials (internal/online)  
-
----
-
-## 👤 Author & Contact
-
-**Shree Ganesh Venkatramana Bhat** – Data Analyst  
-- Email: shriganeshbhat0@gmail.com  
-- LinkedIn: [linkedin.com/in/shreeganesh-bhat-8a8184398](https://www.linkedin.com/in/shreeganesh-bhat-8a8184398?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
+- Email: **shriganeshbhat0@gmail.com**  
+- LinkedIn: [linkedin.com/in/shreeganesh-bhat-8a8184398](https://www.linkedin.com/in/shreeganesh-bhat-8a8184398)  
 - GitHub: [github.com/shriganeshbhat0-git](https://github.com/shriganeshbhat0-git)
+
+## Folder Structure
+
