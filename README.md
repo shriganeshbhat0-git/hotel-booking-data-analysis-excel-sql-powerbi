@@ -11,9 +11,12 @@ Analyzed hotel booking data using **Excel**, **SQL Server**, and **Power BI** to
 4. [Tools and Technologies](#tools-and-technologies)  
 5. [Folder Structure](#folder-structure)  
 6. [Data Cleaning & Preparation](#data-cleaning--preparation)  
-7. [Analysis & Insights](#analysis--insights)  
-8. [Dashboard](#dashboard)  
-9. [Conclusion](#conclusion)  
+7. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)  
+8. [Key Insights](#key-insights)  
+9. [Dashboard Overview](#dashboard-overview)  
+10. [Future Work](#future-work)  
+11. [References](#references)  
+12. [Author & Contact](#author--contact)  
 
 ---
 
@@ -43,67 +46,60 @@ The dataset includes:
 ---
 
 ## Tools and Technologies
-- **Excel** – Initial exploration and cleaning.  
-- **SQL Server** – Data consolidation, querying, and aggregation.  
-- **Power BI** – Dashboard creation and visualization.  
+- **Excel** – Initial exploration and cleaning  
+- **SQL Server** – Data consolidation, querying, and aggregation  
+- **Power BI** – Dashboard creation and visualization  
 
----
 ---
 
 ## Folder Structure
-```markdown
-Hotel_Booking_Project/
+```plaintext
+hotel-booking-data-analysis/
 │
 ├── data/
-│   ├── raw/             # Original hotel data files
-│   └── cleaned/         # Cleaned data after preprocessing
+│   ├── raw/                     # Raw hotel booking CSV files
+│   └── cleaned/                 # SQL-cleaned datasets / query outputs
 │
-├── sql_queries/          # SQL scripts used for analysis
+├── analysis-of-hoteldata/       # Analysis scripts / SQL / notebooks
+├── report_of_hotel-data/        # Final analysis report
+├── dash_board_of_hotel_data/    # Power BI dashboard files / exports
 │
-├── images/               # Screenshots, charts, and visualizations
+├── images/                      # Screenshots, charts, visuals
 │
-├── analysis/             
-│   ├── analysis-of-hotel-data.md
-│   └── report_of_hotel_data.md
-│
-└── dashboard/            
-    └── dash_board_of_hotel_data.pbix
+├── README.md                    # Project documentation
+└── requirements.txt             # Dependencies (optional)
 
 
-
+```
 ---
 
 ## 🧹 Data Cleaning & Preparation
-
-- Imported raw hotel booking datasets and merged multi-year data.  
-- Standardized data types, formatted dates, and filled missing values.  
-- Engineered revenue and calculated fields.  
-- Used joins to enrich data with market segment and meal cost tables.  
-- Created a fully **analysis-ready dataset**.
+- Imported raw hotel booking datasets and merged multi-year data  
+- Standardized data types, formatted dates, and filled missing values  
+- Engineered revenue and calculated fields  
+- Used joins to enrich data with market segment and meal cost tables  
+- Created a fully **analysis-ready dataset**  
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
-
-- Verified data consistency after merging.  
-- Analyzed revenue trends, booking patterns, seasonality.  
-- Studied guest behavior and occupancy.  
-- Evaluated parking requirements using car-space data.  
+- Verified data consistency after merging  
+- Analyzed revenue trends, booking patterns, seasonality  
+- Studied guest behavior and occupancy  
+- Evaluated parking requirements using car-space data  
 
 ---
 
 ## 📊 Key Insights
-
-- City Hotels receive higher bookings consistently.  
-- Revenue increased every year with minor seasonal dips.  
-- Peak bookings occur during holiday seasons.  
-- Higher car-space usage seen with family bookings.  
-- Resort Hotels show longer average stays.  
+- City Hotels receive higher bookings consistently  
+- Revenue increased every year with minor seasonal dips  
+- Peak bookings occur during holiday seasons  
+- Higher car-space usage seen with family bookings  
+- Resort Hotels show longer average stays  
 
 ---
 
 ## 📈 Dashboard Overview
-
 The **Power BI dashboard** provides a complete view of hotel performance.
 
 ### 1. KPIs:
@@ -123,7 +119,6 @@ The **Power BI dashboard** provides a complete view of hotel performance.
 ---
 
 ## 🔮 Future Work
-
 - Add 2021–2023 data  
 - Predictive modelling for revenue and occupancy  
 - Dynamic pricing analysis for ADR optimization  
@@ -132,17 +127,20 @@ The **Power BI dashboard** provides a complete view of hotel performance.
 ---
 
 ## 📚 References
-
-- [Public hotel booking dataset](https://absentdata.com/data-analysis/where-to-find-data)
+- [Public hotel booking dataset](https://absentdata.com/data-analysis/where-to-find-data)  
 
 ---
 
 ## 👤 Author & Contact
-
 **Shree Ganesh Venkatramana Bhat** – Data Analyst  
 - Email: **shriganeshbhat0@gmail.com**  
 - LinkedIn: [linkedin.com/in/shreeganesh-bhat-8a8184398](https://www.linkedin.com/in/shreeganesh-bhat-8a8184398)  
 - GitHub: [github.com/shriganeshbhat0-git](https://github.com/shriganeshbhat0-git)
 
-## Folder Structure
+
+
+
+
+
+
 
