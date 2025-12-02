@@ -150,7 +150,7 @@ The **Power BI dashboard** provides a complete view of hotel performance.
 
 ## 👤 Author & Contact
  <h2 id="author-contacts"></h2>
-Shreeganesh Venkatramana Bhat 
+Shreeganesh Bhat 
 - Data Analyst  
 - Email- shriganeshbhat0@gmail.com
 - LinkedIn- (https://www.linkedin.com/in/shreeganesh-bhat-8a8184398)  
