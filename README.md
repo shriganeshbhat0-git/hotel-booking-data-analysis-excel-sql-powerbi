@@ -34,9 +34,13 @@ This project focuses on analyzing hotel booking data from 2018–2020 to identif
 
 <h2 id="business-problem">🏫 Business Problem</h2>
 Hotels often struggle with understanding booking trends, managing cancellations, and maximizing occupancy. This project aims to:
+
 - Identify trends in bookings and cancellations.
+
 - Analyze revenue performance over years.
+
 - Highlight customer behavior patterns.
+
 - Provide actionable recommendations.
 
 ---
@@ -44,11 +48,17 @@ Hotels often struggle with understanding booking trends, managing cancellations,
 
 <h2 id="dataset">📅 Dataset</h2>
 The dataset includes:
+
 - Booking dates
+
 - Customer details
+
 - Room types
+
 - Stay duration
+
 - Cancellation status
+
 - Revenue
 
 ---
@@ -56,7 +66,9 @@ The dataset includes:
 <h2 id="tools-and-technologies">⚙️Tools and Technologies</h2>
 
 - **Excel** – Initial exploration and cleaning  
+
 - **SQL Server** – Data consolidation, querying, and aggregation  
+
 - **Power BI** – Dashboard creation and visualization  
 
 ---
@@ -86,29 +98,43 @@ hotel-booking-data-analysis/
 
 ## 🧹 Data Cleaning & Preparation
 <h2 id="data-cleaning-preparation"></h2>
+
 - Imported raw hotel booking datasets and merged multi-year data  
+
 - Standardized data types, formatted dates, and filled missing values  
+
 - Engineered revenue and calculated fields  
+
 - Used joins to enrich data with market segment and meal cost tables  
+
 - Created a fully **analysis-ready dataset**  
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
 <h2 id="exploratory-data-analysis-eda"></h2>
+
 - Verified data consistency after merging  
+
 - Analyzed revenue trends, booking patterns, seasonality  
+
 - Studied guest behavior and occupancy  
+
 - Evaluated parking requirements using car-space data  
 
 ---
 
 ## 📊 Key Insights
 <h2 id="key-insights"></h2>
+
 - City Hotels receive higher bookings consistently  
+
 - Revenue increased every year with minor seasonal dips  
+
 - Peak bookings occur during holiday seasons  
+
 - Higher car-space usage seen with family bookings  
+
 - Resort Hotels show longer average stays  
 
 ---
@@ -135,9 +161,13 @@ The **Power BI dashboard** provides a complete view of hotel performance.
 
 ## 🔮 Future Work
 <h2 id="future-work"></h2>
+
 - Add 2021–2023 data  
+
 - Predictive modelling for revenue and occupancy  
+
 - Dynamic pricing analysis for ADR optimization  
+
 - Sentiment analysis from customer reviews  
 
 ---
